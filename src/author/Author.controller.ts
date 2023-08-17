@@ -7,7 +7,7 @@ export class AuthorController {
   @Post('/create')
   @HttpCode(201)
   async create(@Body() authorDto: AuthorDto) {
-    const author = new Author(
+    const author = Author.create(
       authorDto.name,
       authorDto.email,
       authorDto.description,
