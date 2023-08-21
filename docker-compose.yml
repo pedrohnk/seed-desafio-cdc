@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: "test"
+      POSTGRES_PASSWORD: "pass2023"
+    ports:
+      - "5432:5432"
